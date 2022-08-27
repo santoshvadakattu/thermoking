@@ -1,0 +1,76 @@
+.tk-form h2{
+    text-transform: uppercase;
+    color: #797979;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+.tk-form input[type="text"],
+.tk-form input[type="date"],
+.tk-form input[type="datetime"],
+.tk-form input[type="email"],
+.tk-form input[type="number"],
+.tk-form input[type="search"],
+.tk-form input[type="time"],
+.tk-form input[type="url"],
+.tk-form input[type="password"],
+.tk-form textarea,
+.tk-form select
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+
+    height: 45px;
+}
+.tk-form textarea{
+    resize:none;
+    overflow: hidden;
+}
+.tk-form input[type="button"],
+.tk-form input[type="submit"]{
+    -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    background-color: #2CBBBB;
+    border: 1px solid #27A0A0;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.tk-form input[type="button"]:hover,
+.tk-form input[type="submit"]:hover {
+    background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+    background-color:#34CACA;
+}
+
+.tk-form .field-split{
+    width: 49%!important;
+}
+
+.tk-form input.align-left{
+    float:left;
+}
+.tk-form input.align-right{
+    float:right;
+}
+
+.tk-form .tk-checkbox:checked {
+    background-color: #0188CB;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("clientlib-images/resources/check.png");}
