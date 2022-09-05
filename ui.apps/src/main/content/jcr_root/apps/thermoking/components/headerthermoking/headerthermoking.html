@@ -1,0 +1,13 @@
+<sly data-sly-use.model="com.adobe.aem.thermoking.site.core.models.HeaderthermoKingmodel"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.quickLinks="${model.quickLinks}"
+     class="cmp-title">
+     From Thermoking Header Thermoking component
+<div class="sw-quicklinks-title">${properties.title}</div>
+    <div class='sw-row'>
+        <ul class="sw-quicklinks">
+            <li class="sw-quicklink-list" data-sly-repeat.links="${model.quickLinks}"><a href="${links.linkURL}"> ${links.linkLabel} </a> </li>
+        </ul>        
+    </div>
+</sly>
+<sly data-sly-call="${template.placeholder @ isEmpty=!quickLinks, classAppend='cmp-title'}"></sly>

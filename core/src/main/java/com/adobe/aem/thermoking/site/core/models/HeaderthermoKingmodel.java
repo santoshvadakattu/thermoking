@@ -8,15 +8,12 @@ import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ChildResource;
 
-@Model(adaptables = { Resource.class }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class LinkStack {
+@Model(adaptables = Resource.class,defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 
-	/*
-	 * @Inject private Resource quickLinks;
-	 * 
-	 */
+public class HeaderthermoKingmodel {
+
 	@ChildResource
-	private final List<LinksModel> quickLinks = new ArrayList<>();
+	private final List <LinksModel> quickLinks = new ArrayList<>();
 
 	public List<LinksModel> getQuickLinks() {
 		List<LinksModel> linkscopy = new ArrayList<LinksModel>();
@@ -24,4 +21,5 @@ public class LinkStack {
 		return linkscopy;
 	}
 }
- 
+
+
