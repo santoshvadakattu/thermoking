@@ -1,0 +1,34 @@
+<sly data-sly-use.model="com.adobe.aem.thermoking.site.core.models.ServiceIsKing">
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+   <sly data-sly-call="${clientlib.css @ categories='thermoking.website'}"/>
+</sly>
+<div 
+   class="style-container-wrapper -brand-color   -no-page-break -">
+   <div class="title-wrapper -no-page-break"></div>
+   <div class="style-container-grid">
+      <div
+         class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--tablet--12 ">
+         <div
+            class="testimonial aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--offset--default--1">
+            <div>
+               <div class="testimonial-wrapper -brand-color">
+                  <h4 class="title">${model.serviceTitle}</h4>
+                  <div class="testimonial-content-wrapper">
+                     <div class="testimonial-text-wrapper">
+                        <p class="quotation">“</p>
+                        <p  class= "${model.serviceDiscription}"}>${model.serviceDiscription @context='html'}
+                        </p>
+                        <div class="testimonial-customer-wrapper">
+                           <p class="customer-name">Mitchell Bottomley</p>
+                           <p class="customer-title">Owner, Bottomley
+                              Enterprises
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
