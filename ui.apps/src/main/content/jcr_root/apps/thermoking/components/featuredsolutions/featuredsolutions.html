@@ -1,21 +1,26 @@
-<sly data-sly-use.solutions="com.adobe.aem.thermoking.site.core.models.FeaturedSolutionsModel"/>
+<sly data-sly-use.solutions="com.adobe.aem.thermoking.site.core.models.FeaturedSolutionsModel">
+
+
 
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
     <sly data-sly-call="${clientlib.css @ categories='thermoking.website'}"/>
 </sly>
 
+
+
 <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
 <div class="card-carousel-container aem-GridColumn aem-GridColumn--default--12">
 <div class="card-carousel-wrapper ">
-<div class="title-wrapper -no-page-break">
-<h1 class="title -center  -no-page-break">Featured Solutions</h1>
+<div class="card-carousel">
+<div class="carousel-card">
+<div class="carousel-card-content"> <sly data-sly-repeat.king="${solutions.linktree}">
+<div class="card-carousel-image-wrapper"> <img src="${king.fileReference}"</div>
+<div class="carousel-card-content"><p class="title"> <a href="${king.linkUrl}"> ${king.title} </a></p>
+<p class="description"> <data-sly-test="${king.text}">${king.text @context='html'}</p></div>
+</sly>
 </div>
- <div class="carousel-card-content"> <sly data-sly-repeat.king="${solutions.linktree}">
- <div> <img src="${king.fileReference}"</div>
- <div> <a href="${king.linkUrl}"> ${king.title} </a></div>
- <div> <data-sly-test="${king.text}">${king.text @context='html'}</div>
- </sly>
- </div>
+</div>
+</div>
 </div>
 </div>
 </div>
