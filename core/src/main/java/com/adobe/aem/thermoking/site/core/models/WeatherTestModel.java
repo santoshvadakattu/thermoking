@@ -21,7 +21,7 @@ public class WeatherTestModel {
     private String location;
 
     public String getLocation() {
-        LOG.info("nn"); // Here logs are printing
+        LOG.info("this is logs for testing for waether test component"); // Here logs are printing
         return location;
     }
 
