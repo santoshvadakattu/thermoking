@@ -1,47 +1,36 @@
 <sly data-sly-use.model="com.adobe.aem.thermoking.site.core.models.Brocher">
-
-
-
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
     <sly data-sly-call="${clientlib.css @ categories='thermoking.website'}"/>
 </sly>
-
-
 <div id="homepage-container">
-		<div
-			class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--tablet--12 ">
-			<div
-				class="responsivegrid aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
-				<div
-					class="aem-Grid aem-Grid--default--12 aem-Grid--tablet--12 aem-Grid--small--12 aem-Grid--phone--12 ">
-					<div
-						class="hero-component aem-GridColumn--tablet--12 aem-GridColumn aem-GridColumn--default--12">
-						<div class="hero -black"
-							style="background-image: url(/content/dam/thermoking/precedent-s750i-hero-banner.jpg)"
-							aria-label="Introducing the Precedent® S-750i | Image description:'">
-							<div class="hero-overlay -black -left">
-								<h1 class="header -black ">"${model.title}"</h1>
-								<p class="description -black ">"${model.description}"</p>
-								<div class="button-wrapper ">
-									<div class="button-wrapper-2">
-										<div>
-											<div class="button-container" "${model.button1}">
-												<a
-													href="${model.linkURL1}
-													target="_self" class="btn -primary">Learn More</a>
-											</div>
-										</div>
-									</div>
-									<div class="button-wrapper-2">
-										<div>
-											<div class="button-container""${model.button2}">
-												<a
-													href="${model.linkURL2}"
-													target="_blank" class="btn -secondary">Download Brochure</a>
- 											</div>
-										</div>
-							</div>
-								</div>
-							</div>
+<div class="col-6 broucherComponent">
+	<div class="hero -black" aria-label="Introducing the Precedent® S-750i | Image description:'">
+		<div class="hero-overlay -black -left">
+			<h1 class="header -black">${model.title}</h1>
+			<p class="description -black">${model.description}</p>
+			
+			<div class="button-wrapper ">
+				<div class="button-wrapper-2">
+						<div class="button-container">
+							<a href="${model.linkurl}" target="_self" class="btn -primary">
+								${model.ButtontextOne}</a>
 						</div>
-					</div>
+				</div>
+				<div class="button-wrapper-2">
+						<div class="button-container">
+							<a href="${model.linkurl}" target="_blank" class="btn -secondary">
+								${model.ButtontextTwo}
+							</a>
+						 </div>
+		</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-6 broucherComponent">
+<div class="hero-component aem-GridColumn--tablet--6 aem-GridColumn aem-GridColumn--default--12">
+	<img src="${model.image}" class="bannerimage"  alt="image"/>
+</div>
+</div>
+</div>
+</sly>	

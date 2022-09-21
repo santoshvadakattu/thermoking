@@ -1,35 +1,21 @@
 <sly data-sly-use.model="com.adobe.aem.thermoking.site.core.models.LinkStack">
-
-
-
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
     <sly data-sly-call="${clientlib.css @ categories='thermoking.website'}"/>
 </sly>
-
-
-
-
-<div>
-<div>
-<div>
-   <header class="page__header">
-      <input type="hidden" id="stockSymbolId" value="IR" />
-      <div class="aem-Grid aem-Grid--12 main-nav">
-         <div class="aem-Grid aem-Grid--12 main-nav-wrapper">
-            <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--2 main-nav-content-wrapper">
-                <! Iterating over the multifield values started -->
-                   <div class="main-nav-item -dropdown" data-sly-repeat.links="${model.quickLinks}">
-                        <a href="${links.linkURL}" class="link">${links.linkLabel} <span class="caret"></span>
-                      </a>
-                   </div>
-                <! Iterating over the multifield values completed -->
-               <div class="hamburger-nav">
-                  <span class="line"></span> <span class="line"></span> <span
-                     class="line"></span>
-               </div>
+<header class="page__header">
+   <input type="hidden" id="stockSymbolId" value="IR" />
+   <div class="aem-Grid aem-Grid--12 main-nav">
+      <div class="aem-Grid aem-Grid--12 main-nav-wrapper">
+         <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--2 main-nav-content-wrapper">
+            <div class="main-nav-item -dropdown" data-sly-repeat.links="${model.quickLinks}">
+               <a href="${links.linkURL}" class="link">${links.linkLabel} <span class="caret"></span>
+               </a>
+            </div>
+            <div class="hamburger-nav">
+               <span class="line"></span> <span class="line"></span> <span
+                  class="line"></span>
             </div>
          </div>
-   </header>
-   </div>
-</div>
-<div></div>
+      </div>
+</header>
+</sly>
