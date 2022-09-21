@@ -6,7 +6,7 @@
  *    without disabling user zoom.
  */
 
-html {
+ html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -14201,7 +14201,7 @@ textarea {
   display: inline-block;
   color: #000000; }
   .button-container .btn {
-    white-space: break-spaces;
+    white-space: nowrap;
     display: inline-block;
     background-color: #0188CB;
     border: 1px solid #0188CB;
@@ -14490,8 +14490,8 @@ textarea {
         padding: 120px 20px; } }
   .hero-overlay.-left, .hero-overlay.-right {
     margin: 0;
-    max-width: 50%;
-    width: 50%;
+    max-width: 100%;
+    width: 100%;
     height: 100%;
     padding: 120px 70px; }
     @media (max-width: 767px) {
@@ -16054,6 +16054,7 @@ textarea {
       background-position: center 0;
       background-image: url("../../../../../etc.clientlibs/settings/wcm/designs/thermoking-na/clientlib-images/resources/svg/paperclip.svg");
       background-size: 10px; }
+
   #contact-us .upload-button > .upload {
     font-size: 100px;
     position: absolute;
@@ -16124,3 +16125,67 @@ textarea {
   border-top: 1px solid #C1C1C1; }
 
 /*# sourceMappingURL=../../../../../../../../../../../target/design-system/components/content/horizontal-rule/clientlib/scss/horizontal-rule-all.css.map */
+.sw-quicklink-list{
+  display: inline;
+}
+
+.sw-quicklink-list .top-nav-link{
+  display: inline;
+}
+
+.darkbg{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.lightbg{
+  background-color: #4D4F53;
+  color: #ffffff;
+}
+
+.align-center{
+  text-align: center;
+}
+
+.align-left{
+  text-align: left;
+}
+
+.align-right{
+  text-align: right;  
+}
+
+.logobg{
+  background-color: #000000;
+}
+
+.bgblack{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.bglight{
+  background-color: #4D4F53;
+  color: #ffffff;
+}
+
+.spacearound{
+  padding: 32px 35px 32px 35px;
+}
+
+.col-6.broucherComponent{
+  float: left;
+}
+
+.bannerimage{
+  max-height: 460px;
+}
+
+.two-column .col-6.broucherComponent {
+  flex-direction: column;
+}
+
+.row-reverse .col-6.broucherComponent {
+  flex-direction: column-reverse;
+  float: right;
+}

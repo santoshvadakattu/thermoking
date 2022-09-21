@@ -25,12 +25,12 @@ public class Brocher {
     @Default(values = "button")
     private String button1;
     
-    @ValueMapValue
+	@ValueMapValue
     @Default(values = "button")
     private String button2;
     
     @ValueMapValue
-    @Default(values = "image")
+    @Default(values = "img")
     private String img;
 
     
@@ -42,6 +42,13 @@ public class Brocher {
     @Default(values = "url.2")
     private String linkurl2;
 
+	@ValueMapValue
+    private String buttontextOne;
+    
+    @ValueMapValue
+    private String buttontextTwo;    
+    
+
 
 	public String getTitle() {
 		return titlee;
@@ -51,11 +58,11 @@ public class Brocher {
 		return descriptionn;
 	}			
 
-	public String getButton1() {
+	public String getButton1() {	
 		return button1;
 	}
 
-	public String getButton2() {
+	public String getSecondButton() {
 		return button2;
 	}
 	
@@ -70,8 +77,15 @@ public class Brocher {
 		return linkurl2;
 	}
 	
+    
+    public String getButtontextOne() {
+		return buttontextOne;
+	}
+
+	public String getButtontextTwo() {
+		return buttontextTwo;
+	}	
 	
-		
 		
 	}
 	
