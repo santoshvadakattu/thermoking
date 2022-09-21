@@ -1,0 +1,10 @@
+
+ <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='thermoking.website'}"/>
+ </sly>
+
+ <sly data-sly-use.model="com.adobe.aem.thermoking.site.core.models.PictureModel">
+
+<img src="${model.fileReference}">
+
+<img  alt="${model.alt}" style="width:500px;height:600px;">
